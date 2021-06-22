@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-image: radial-gradient(
+    circle 830px at 95.6% -5%,
+    rgb(133, 119, 122) 0%,
+    rgb(20, 17, 17) 90%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form {
+  width: 30%;
+  background-color: #fff;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+ 
+  
+  
+}
+
+h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.question-field {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+select,
+input.amount {
+  margin-top: 10px;
+  outline: none;
+  padding: 7px;
+  border: solid;
+  border-bottom: 2px solid rgb(49, 45, 46);
+}
+
+input[type="submit"] {
+  width: 90%;
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+  border: none;
+  color: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #fff;
+  color: rgba(223, 23, 55, 1);
+}
+
+/* PREGUNTAS */
+
+.content {
+  width: 50%;
+  background-color: #fff;
+  margin: auto;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  border: solid 20px;
+  -webkit-box-shadow: 10px 10px 15px -5px rgba(0, 0, 0, 0.62);
+  -moz-box-shadow: 10px 10px 15px -5px rgba(0, 0, 0, 0.62);
+  box-shadow: 10px 10px 15px -5px rgba(0, 0, 0, 0.62);
+}
+
+.question-items {
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.question-items button {
+  width: 48%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  background-color: #1d0d0d;
+  color: #fff;
+}
